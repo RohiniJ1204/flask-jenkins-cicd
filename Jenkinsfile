@@ -33,7 +33,7 @@ pipeline {
                 sh """
                     docker stop myapp || true
                     docker rm myapp || true
-                    docker run -d -p 5000:5000 --name myapp local/myapp:${BUILD_NUMBER}
+                    docker run -d -p 6000:6000 --name myapp local/myapp:${BUILD_NUMBER}
                 """
             }
         }
