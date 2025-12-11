@@ -17,7 +17,7 @@ pipeline {
         stage('Unit Test') {
             steps {
                 sh """
-                    python -m py_compile app.py
+                    python3 -m py_compile app.py
                 """
             }
         }
